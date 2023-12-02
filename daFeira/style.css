@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  height: 70px;
+  background: #059954;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

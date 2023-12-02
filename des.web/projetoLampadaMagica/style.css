@@ -1,0 +1,28 @@
+
+.container {
+    width:600px;
+    height:500px;
+    margin: 0 auto;
+    display:grid;
+    place-content: center;
+    text-align: center;
+}
+
+.container img {
+    margin: 0 auto;
+    height:300px;
+    margin-bottom: 2rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+}
+
+
+.oculto {
+    display:none;
+}
+
+.lampadaDesligada, .lampadaLigada {
+   cursor: pointer;
+}

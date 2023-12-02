@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Projeto Hamburgueria</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="input-container col">
+          <label for="telefone"><i class="ri-phone-fill"></i> Telefone</label>
+          <input
+            type="number"
+            placeholder="Digite seu celular "
+            class="container-fluid form-control-lg"
+          />
+        </div>
+        <div class="input-container col">
+          <label for="nome-cliente">
+            <i class="ri-user-line"></i> Nome do Cliente
+          </label>
+          <input
+            type="text"
+            placeholder="Nome do cliente"
+            class="container-fluid form-control-lg"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container col-6">
+          <label for="combos"> <i class="ri-cake-2-line"></i> Combos</label>
+          <select
+            name="combos"
+            id="combos"
+            class="container-fluid form-control-lg"
+          >
+            <option value="x-bacon">X-Bacon</option>
+            <option value="x-frango">X-frango</option>
+            <option value="x-burguer">X-Burguer</option>
+            <option value="x-Calabresa">X-Calabresa</option>
+            <option value="x-Tudo">X-Tudo</option>
+          </select>
+        </div>
+
+        <div class="col-3">
+          <div class="container-adicionais">
+            <div class="form-check">
+              <label for="bacon">Bacon</label>
+              <input type="checkbox" name="bacon" id="bacon" />
+            </div>
+            <div class="form-check">
+              <label for="cheddar">Cheddar</label>
+              <input type="checkbox" name="cheddar" id="cheddar" />
+            </div>
+            <div class="form-check">
+              <label for="picles">Picles</label>
+              <input type="checkbox" name="picles" id="picles" />
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="container-radio">
+            <div class="form-check">
+              <label for="option">Para viagem</label>
+              <input type="radio" name="option" id="option" />
+            </div>
+            <div class="form-check">
+              <label for="balcao">Balcão</label>
+              <input type="radio" name="option" id="balcao" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container-botoes text-center mt-4">
+          <button type="button" class="btn btn-primary m-1">Calcular</button>
+          <button type="button" class="btn btn-primary m-1">Novo pedido</button>
+          <button type="button" class="btn btn-primary m-1">Recibo</button>
+        </div>
+
+        <div class="container-valor-a-pagar">
+          <label for="total">Total a pagar</label>
+          <textarea name="total" id="total" cols="150" rows="3"></textarea>
+        </div>
+        <div class="container-valor-a-pagar">
+          <label for="total">Descrição do pedido</label>
+          <textarea name="total" id="total" cols="150" rows="7"></textarea>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

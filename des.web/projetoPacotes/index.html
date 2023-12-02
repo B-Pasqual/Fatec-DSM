@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto pacotes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h2>Viagem FatecVot</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nomeCli" id="nome">
+    <hr>
+
+    <input type="radio" name="pacotes" value="1000">
+    <label for="">Pacotes 1:  </label>
+
+    <input type="radio" name="pacotes" value="2000">
+    <label for="">Pacotes 2:  </label>
+
+    <input type="radio" name="pacotes" value="3000">
+    <label for="">Pacotes 3:  </label>
+    <hr>
+    <label >adicionais</label>
+    <div class="container">
+        <label for="alimentacao">Alimentação</label>
+        <input type="checkbox" name="alimentacao" class="adicional" value="300">
+        <label for="veiculo">Veiculo</label>
+        <input type="checkbox" name="veiculo" class="adicional" value="150">
+        <label for="translado">Translado</label>
+        <input type="checkbox" name="translado" class="adicional" value="50">
+    </div>
+    <div class="container-output">
+
+    </div>
+
+    <button onclick=calcularTotal() style="margin: 2rem 0;" >Calcular valor</button>
+
+    
+</body>
+</html>

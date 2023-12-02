@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <h1>Cadastro</h1>
+    <div class="container-input">
+      <label for="input-nome">Nome</label>
+      <input
+        type="text"
+        name="input-nome"
+        id="input-nome"
+        maxlength="30"
+        placeholder="Informe o nome"
+      />
+    </div>
+    <div class="container-input">
+      <label for="input-senha">Senha</label>
+      <input type="password" name="input-senha" id="input-senha" />
+    </div>
+    <div class="container-input">
+      <label for="input-cep">CEP</label>
+      <input type="number" maxlength="8" id="input-cep" />
+    </div>
+    <div class="container-input">
+      <label for="cidade-output" id="cidade-output">Cidade:</label>
+    </div>
+    <div class="input-container">
+      <label for="input-idade">Idade</label>
+      <input type="number" name="input-idade" id="input-idade" />
+    </div>
+    <div class="input-container">
+      <label for="opcao-termo">Aceita os termos: </label>
+
+      <input type="radio" name="opcao-termo" class="opcao-termo" value="sim" />
+      <span>Sim</span>
+      <input type="radio" name="opcao-termo" class="opcao-termo" value="nao" />
+      <span>Não</span>
+      <button onclick="rodaRotina()">Enviar</button>
+    </div>
+  </body>
+</html>
